@@ -1,0 +1,320 @@
+*{
+	  font-family: "Josefin Sans", sans-serif;
+}
+#game-field {
+    position              : absolute;
+    height                : 100vh;
+    -webkit-box-pack      : center;
+    -ms-flex-pack         : center;
+    justify-content       : center;
+    align-items           : center;
+    margin-top: 150px;
+    width: 700px;
+    height: 500px;
+}
+#danger{
+	 background-color:red;
+	 height:50px;
+	 width:280px;
+	text-align:center;
+}
+
+#show{
+    color: #F5F5F5;
+	margin-top:50px;
+
+}
+#show span{
+	font-weight:bold; 
+	font-size:28pt;
+	color:rgb(255, 255, 0);
+}
+
+#game-title{
+	background-color:rgba(255,0,0,0.8);
+	border:5px;
+	border-color:black;
+	border-style:solid;
+	border-radius:25px;
+	text-align:center;
+	margin:0px;
+	width:500px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0;
+	height:50%;
+	
+	
+	 position              : absolute;
+    height                : 100px;
+    -webkit-box-pack      : center;
+    -ms-flex-pack         : center;
+    justify-content       : center;
+    align-items           : center;
+    margin-top: -100px;
+    width: 600px;
+}
+#game-title h1{
+	font-size:30pt;
+	color:White;
+	text-align:center;
+    margin-top: -5px;
+}
+#game-title h3{
+	font-size:10pt;
+	color:White;
+	text-align:center;
+	margin-top: 10px;
+}
+#game-title h4{
+	font-size:10pt;
+	color:White;
+	text-align:center;
+	margin-top: -25px;
+}
+
+input[type=text] {
+	border-radius:15px;
+}
+#level-options{
+		font-size:20pt;
+		color:white;
+}
+#level-options-select{
+		font-size:22pt;
+}
+#button-start {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04AA6D;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  transition:0.5s;
+}
+
+#button-start:hover {
+	background-color: #228B22;  
+	transition:0.5s;
+	}
+
+#button-start:active {
+  background-color: #228B22;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  transition:0.5s;
+}
+
+#names{
+    color: white;
+	text-align:center;
+	margin:0;
+	font-size:30pt;
+}
+#names input{
+   margin-left:30px;
+}
+#scores{
+	color: white;
+}
+
+
+#player_1_gui,#player_2_gui{
+	min-width:200px;
+	height:160px;
+	background-color:rgba(60, 179, 113,0.8);
+	display:inline-block;
+	text-align:center;
+	border-radius:25px;
+	padding:1em;
+	border:2px;
+	border-color:white;
+	border-style:solid;
+	margin-top:0px;
+}
+
+
+
+input[type=text]#user_turn {
+  display: block;
+}
+
+
+#dice_result{
+	width:40%; 
+	text-align:center;
+}
+
+html {
+    height   : 100vh;
+	overflow: hidden; /* Hide scrollbars */
+ 	background-image: url("../img/two-dice.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+html #main_game_form {
+    display         : -webkit-box;
+    display         : -ms-flexbox;
+    display         : flex;
+    -ms-flex-pack   : distribute;
+    justify-content : space-around;
+	height:1000px; 
+	overflow: hidden;
+   padding-top: 50px;
+   
+}
+#milestone{
+  margin-top: 50px;
+     background-color:white;
+      height: 1000px;
+    
+}
+
+html #start-form-wrapper {
+    display            : -webkit-box;
+    display            : -ms-flexbox;
+    display            : flex;
+    -ms-flex-pack      : distribute;
+    justify-content    : space-around;
+    -ms-flex-line-pack : center;
+    align-content      : center;
+    width: 100%;
+	margin-top: 70px;
+}
+
+#start-form{
+	margin-top: 0px;
+}
+
+html #start-form-wrapper #start-form {
+    justify-self : center;
+    text-align   : center;
+}
+
+html #start-form-wrapper #start-form input {
+    padding : 10px;
+}
+
+html #start-form-wrapper #start-form #names {
+    display : -webkit-box;
+    display : -ms-flexbox;
+    display : flex;
+}
+
+#start-form-wrapper p {
+color:white;
+font-size:20pt;
+}
+.safe{
+	background: #FAEBD7;
+}
+
+button{
+   background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+	transition:10s;
+
+}
+
+button:focus{
+	transition:10s;
+	transform:
+
+}
+
+.dice-img {
+    position: relative;
+    width: 50px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+	
+nav {
+  width: 100%;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  width: 25%;
+  text-align: center;
+  /*background: red;*/
+}
+
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  height:10px;
+}
+
+nav .menu a {
+  width: 25%;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition:0.5s;
+}
+
+nav .menu a:hover {
+  width: 25%;
+  text-decoration: none;
+  color: red;
+  font-size:14pt;
+  transition:0.5s;
+}
+
+nav .menu a:first-child {
+  color: red;
+}
+
+
+#level{	
+	width:300px;
+	height:100px;
+	background-color:rgba(60, 179, 255,0.8);
+	text-align:center;
+	border-radius:25px;
+	padding:1em;
+	border:2px;
+	border-color:white;
+	border-style:solid;
+	margin-top:-500px;
+	margin-left:1500px;
+}
+#level h1{
+	font-size:20pt;
+	color:white;
+}
+#level h2{
+	font-size:14pt;
+	color:white;
+
+}
